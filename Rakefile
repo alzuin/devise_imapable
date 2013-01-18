@@ -1,6 +1,6 @@
 require 'rake'
 require 'rake/testtask'
-require 'rake/rdoctask'
+require 'rdoc/task'
 
 desc 'Default: run unit tests.'
 task :default => :test
@@ -29,10 +29,10 @@ begin
     gemspec.name = "devise_imapable"
     gemspec.summary = "Devise Imap authentication module"
     gemspec.description = "For when you don't have access to LDAP"
-    gemspec.email = "josh.kalderimis@gmail.com"
-    gemspec.homepage = "http://github.com/joshk/devise_imapable"
-    gemspec.authors = ["Josh Kalderimis","Louis St-Amour"]
-    gemspec.add_runtime_dependency "devise", "> 1.0.4"
+    gemspec.email = "alberto@azns.it"
+    gemspec.homepage = "http://github.com/alzuin/devise_imapable"
+    gemspec.authors = ["Josh Kalderimis","Louis St-Amour","Alberto Zuin"]
+    gemspec.add_runtime_dependency "devise", ">= 2.1.2"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
